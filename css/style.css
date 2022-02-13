@@ -1,0 +1,279 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-size: 14px;
+  line-height: 1;
+  color: #252b42;
+  font-weight: 500;
+  font-family: Montserrat;
+}
+
+.img {
+  vertical-align: top;
+}
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+/* img {
+  max-width: 100%;
+  display: block;
+} */
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1046px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/* Шапка профиля */
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header_container {
+  display: flex;
+  min-height: 104px;
+  align-items: center;
+}
+
+@media (max-width: 479px) {
+  .header_container {
+    min-height: 70px;
+  }
+}
+
+.header_logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+.header_menu {
+  margin: 0 0 0 133px;
+}
+
+@media (max-width: 992px) {
+  .header_menu {
+    margin: 0 0 0 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header_menu {
+    margin: 0 0 0 50px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header_menu {
+    margin: 0 0 0 20px;
+  }
+}
+
+.menu {
+  padding: 5px 0;
+}
+
+.menu_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu_item:not(:last-child) {
+  margin: 0 21px 0 0;
+}
+
+.menu_link {
+  color: #737373;
+  line-height: 171%;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 479px) {
+  .menu_link {
+    font-size: 18px;
+  }
+}
+
+/* Main */
+.page {
+  flex: 1 1 auto;
+}
+
+.page_main-block {
+}
+
+/* Низ профиля */
+.footer {
+}
+
+/* Main-block */
+.main-block {
+  position: relative;
+}
+
+.main-block_container {
+}
+
+.main-block_body {
+  padding: 184px 0 191px 0;
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+}
+
+.main-block_body > *:not(last-child) {
+  margin: 0 0 35px 0;
+}
+
+.main-block_title {
+  font-size: 58px;
+  line-height: calc(80 / 58 * 100%);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.main-block_text {
+  color: #737373;
+  font-size: 20px;
+  line-height: calc(30 / 20 * 100%);
+}
+
+.main-block_buttons {
+  display: inline-flex;
+}
+
+.main-block_button {
+  border-radius: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 36px;
+  min-height: 48px;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  line-height: calc(28 / 14 * 100%);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.main-block_button:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+
+.main-block_button_orange {
+  background: #ff7b47;
+  color: #ffffff;
+}
+
+.main-block_button_border {
+  border: 1px solid #0d5c63;
+  color: #0d5c63;
+}
+
+.main-block_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1300px) {
+  .main-block_image img {
+    object-position: right;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-block__image {
+    opacity: 0.5;
+  }
+}
