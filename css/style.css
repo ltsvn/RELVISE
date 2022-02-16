@@ -176,7 +176,7 @@ select {
   }
 }
 
-/* Main */
+/* Main.................................................. */
 .page {
   flex: 1 1 auto;
 }
@@ -184,11 +184,13 @@ select {
 .page_main-block {
 }
 
-/* Низ профиля */
+.page_services {}
+
+/* Низ профиля ..............................................*/
 .footer {
 }
 
-/* Main-block */
+/* Main-block.................................................... */
 .main-block {
   position: relative;
 }
@@ -202,6 +204,11 @@ select {
   z-index: 2;
   max-width: 400px;
 }
+@media (max-width: 992px) {
+  .main-block_body {
+    padding: 120px 0 191px 0;
+  }
+}
 
 .main-block_body > *:not(last-child) {
   margin: 0 0 35px 0;
@@ -214,6 +221,12 @@ select {
   letter-spacing: 0.2px;
 }
 
+@media (max-width: 479px) {
+  .main-block_title {
+    font-size: 42px;
+  }
+}
+
 .main-block_text {
   color: #737373;
   font-size: 20px;
@@ -221,7 +234,9 @@ select {
 }
 
 .main-block_buttons {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0;
 }
 
 .main-block_button {
@@ -237,10 +252,17 @@ select {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  margin: 10px 0;
+}
+
+@media (max-width:479px) {
+  .main-block_button {
+    flex: 1 1 100%;
+  }
 }
 
 .main-block_button:not(:last-child) {
-  margin: 0 10px 0 0;
+  margin-right: 10px;
 }
 
 .main-block_button_orange {
@@ -277,3 +299,63 @@ select {
     opacity: 0.5;
   }
 }
+
+/* ................................................... */
+
+.services {}
+
+.services_container {}
+
+.services_body {
+  display: flex;
+  margin: 0 --15px;
+}
+
+.services_column {
+  padding: 0 15px;
+  flex: 0 1 33.333%;
+}
+
+.services_item {
+  height: 100%;
+  box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  padding: 35px;
+}
+
+.item-service {}
+
+.item-service_icon {
+}
+
+.item-service_green {
+  background-color: #0D5C63;
+}
+
+.item-service_green .item-service_title {
+  color: #ffffff;
+}
+
+.item-service_green .item-service_text {
+  color: #ffffff;
+}
+
+.item-service > *:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.item-service_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+}
+
+.item-service_text {
+  line-height: 142%;
+  color: #737373;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
