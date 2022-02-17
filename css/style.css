@@ -184,7 +184,11 @@ select {
 .page_main-block {
 }
 
-.page_services {}
+.page_services {
+  margin: -111px 0 0 0;
+  position: relative;
+  z-index: 2;
+}
 
 /* Низ профиля ..............................................*/
 .footer {
@@ -306,17 +310,36 @@ select {
 
 .services_container {}
 
+@media (min-width: 670px){
 .services_body {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 --15px;
+}
 }
 
 .services_column {
-  padding: 0 15px;
   flex: 0 1 33.333%;
+  margin: 0 0 30px 0;
+ }
+
+ @media (min-width: 670px){
+  .services_column {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services_column {
+    flex: 0 1 50%;
+  }
+.services_column:last-child {
+  flex: 0 1 100%;
+}
 }
 
 .services_item {
+  min-width: 300px;
   height: 100%;
   box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
   background-color: #ffffff;
