@@ -38,6 +38,7 @@ body {
   color: #252b42;
   font-weight: 500;
   font-family: Montserrat;
+  background: #FAFAFA;;
 }
 
 .img {
@@ -189,7 +190,30 @@ select {
   position: relative;
   z-index: 2;
 }
+.page_advantages {
 
+}
+
+/* .......Header-block.......................................... */
+.header-block {
+text-align: center;
+letter-spacing: 0.2;
+
+}
+.header-block_title {
+font-size: 40px;
+line-height: 142%;
+font-weight: 700;
+}
+
+.header-block_title:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.header-block_sub-title {
+color: #737373;
+line-height: 142%;
+}
 /* Низ профиля ..............................................*/
 .footer {
 }
@@ -306,7 +330,8 @@ select {
 
 /* ................................................... */
 
-.services {}
+.services {
+}
 
 .services_container {}
 
@@ -314,7 +339,7 @@ select {
 .services_body {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 --15px;
+  
 }
 }
 
@@ -380,5 +405,60 @@ select {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* ............................................................ */
 
+.advantages {
+  padding: 80px 0;
+}
 
+.advantages_container {
+
+}
+
+.advantages_header {
+margin: 0 0 50px 0;
+}
+
+.advantages_body {
+ 
+  margin: 0 -15px;
+  width: 100%;
+}
+
+.advantages_column {
+  display: flex;
+padding: 0 15px;
+flex: 0 1 25%;
+}
+
+.advantages_item {
+background-color: #fff;
+padding: 30px 30px;
+text-align: center;
+font-weight: 700;
+margin: 0 15px;
+width: 25%;
+}
+.advantages_item > *:not(:last-child) {
+  margin: 0n 0 10px 0;
+}
+
+.advantages_icon {
+height: 48px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+}
+
+.advantages_value {
+font-size: 40px;
+line-height: 142%;
+
+}
+
+.advantages_text {
+color: #737373;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.1;
+}
