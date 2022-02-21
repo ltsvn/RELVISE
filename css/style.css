@@ -214,6 +214,18 @@ font-weight: 700;
 color: #737373;
 line-height: 142%;
 }
+
+@media (max-width: 992px) {
+  .header-block_title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-block_title {
+    font-size: 30px;
+  }
+}
 /* Низ профиля ..............................................*/
 .footer {
 }
@@ -411,6 +423,17 @@ line-height: 142%;
   padding: 80px 0;
 }
 
+@media (max-width: 992px) {
+  .advantages {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 767px) {
+  .advantages {
+    padding: 30px 0;
+  }
+}
+
 .advantages_container {
 
 }
@@ -419,21 +442,41 @@ line-height: 142%;
 margin: 0 0 50px 0;
 }
 
+@media (max-width: 767px) {
+  .advantages_header {
+    margin: 0 0 25px 0;
+  }
+}
+
 .advantages_body {
- 
-  margin: 0 -15px;
-  width: 100%;
+  
+  margin: 0 -15px -30px;
 }
 
 .advantages_column {
   display: flex;
-padding: 0 15px;
-flex: 0 1 25%;
+  flex-wrap: wrap;
+ padding: 0 15px;
+ margin: 0 0 30px 0;
+ flex: 0 1 25%; 
+}
+
+@media (max-width: 1020px) {
+  .advantages_column {
+    flex: 0 1 50%;
+   
+  }
+}
+
+@media (max-width: 560px) {
+  .advantages_column {
+    flex: 0 1 100%;
+  }
 }
 
 .advantages_item {
 background-color: #fff;
-padding: 30px 30px;
+padding: 30px;
 text-align: center;
 font-weight: 700;
 margin: 0 15px;
