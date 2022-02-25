@@ -28,6 +28,10 @@ dd {
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
@@ -191,6 +195,9 @@ select {
   z-index: 2;
 }
 .page_advantages {
+
+}
+.page_practice {
 
 }
 
@@ -455,16 +462,15 @@ margin: 0 0 50px 0;
 
 .advantages_column {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
  padding: 0 15px;
  margin: 0 0 30px 0;
- flex: 0 1 25%; 
+ 
 }
 
 @media (max-width: 1020px) {
   .advantages_column {
-    flex: 0 1 50%;
-   
+    flex-wrap: wrap;
   }
 }
 
@@ -480,7 +486,7 @@ padding: 30px;
 text-align: center;
 font-weight: 700;
 margin: 0 15px;
-width: 25%;
+width: 100%;
 }
 .advantages_item > *:not(:last-child) {
   margin: 0n 0 10px 0;
@@ -508,5 +514,80 @@ letter-spacing: 0.1;
 
 /* .............................................................. */
 
+.practice {
+  padding: 125px 0 80px 0;
+}
 
+.practice_container {
+
+}
+
+.practice_header {
+  margin: 0 0 45px 0;
+}
+
+.practice_body {
+  margin: 0 -20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.practice_column {
+  padding: 0  20px;
+  flex: 0 1 25%; 
+}
+
+@media (max-width: 1040px) {
+  .practice_column {
+    flex: 0 1 50%;
+  }
+}
+
+.practice_item {
+ 
+}
+
+.item-practice {
+  background-color: #fff;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.item-practice_content {
+  padding: 30px;
+  flex: 1 1 auto;
+  
+}
+
+.item-practice_link {
+color: inherit;
+display: inline-block;
+}
+
+.item-practice_link:hover {
+  text-decoration: underline;
+}
+
+.item-practice_link:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+
+.item-practice_title {
+  letter-spacing: 0.1px;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+.item-practice_text {
+color: #737373;
+line-height: 142%;
+
+}
+
+.item-practice_image {
+display: block;
+padding: 0 0 67% 0;
+}
 
