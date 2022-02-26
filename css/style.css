@@ -634,19 +634,51 @@ margin: 0 0 35px 0;
 
 .describe_body{
 display: flex;
+}
 
+@media (max-width: 1015px) {
+  .describe_body {
+    flex-direction: column;
+
+  }
 }
 
 .describe_video {
+
  
+}
+
+.describe_image img{
+  
 }
 
 .describe_image {
 
 }
 
+@media (max-width: 1015px) {
+  .describe_image img{
+    width: 90%;
+  }
+}
+
+@media (max-width: 1015px) {
+  .describe_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .describe_content {
 margin: 0 0 0 115px;
+}
+
+@media (max-width: 1015px) {
+  .describe_content {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 .describe_content-text {
