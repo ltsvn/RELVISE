@@ -918,15 +918,23 @@ border-radius: 5px;
 color: #FF7B47;
 }
 /* ......Contact........................................ */
+.contact_header {
+  padding: 40px 0;
+  background-color: #fff;
+}
 
 .contact_container {
   display: flex;
+  justify-content:space-between;
+
+  
 }
 
 .header_title-text {
   font-size: 24px;
   font-weight: 700;
   color: #252b42;
+  margin: 0 0 15px 0;
 }
 
 .header_sub-title {
@@ -945,5 +953,21 @@ color: #737373;
 }
 
 .contact_body {
-  
+  background-color: #17213C;
+  color:#ffffff;
+  padding: 50px 0;
+}
+
+.contact_items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_footer {
+  padding: 25px  0;
+}
+
+.contact_footer_container {
+  display: flex;
+  justify-content: space-between;
 }
