@@ -844,6 +844,7 @@ cursor: pointer;
 
 .support_container {
  
+
 }
 
 .support_header {
@@ -853,7 +854,7 @@ cursor: pointer;
 .support_body-items{
   display: flex;
   justify-content: center;
-  
+  margin: 0 0 178px 0; 
 }
 
 .body_items {
@@ -915,4 +916,34 @@ background-color: #fff;
 border-color:#FF7B47;
 border-radius: 5px;
 color: #FF7B47;
+}
+/* ......Contact........................................ */
+
+.contact_container {
+  display: flex;
+}
+
+.header_title-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #252b42;
+}
+
+.header_sub-title {
+font-size: 14px;
+font-weight: 500;
+color: #737373;
+}
+
+.contact {
+  color: #ffffff;
+  background-color:#FF7B47;
+  border-color: #FF7B47;
+  border-radius: 5px;
+  width: 163px;
+  height: 58px;
+}
+
+.contact_body {
+  
 }
