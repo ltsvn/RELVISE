@@ -838,6 +838,81 @@ cursor: pointer;
 }
 
 /* .....Support.......................................... */
-.support {
+.page_support {
   border-color: #F3F3F3;
+}
+
+.support_container {
+ 
+}
+
+.support_header {
+  margin: 80px 0;
+}
+
+.support_body-items{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.body_items {
+ background-color: #fff;
+ width: 327px;
+ height: 333px;
+}
+.body-item {
+  margin: 50px 40px;
+  text-align: center;
+}
+
+.dark-item {
+  background-color:#252B42;
+  color: #ffffff;
+  
+}
+
+.item-icon {
+  margin: 0 0 15px 0;
+  
+}
+
+.item_email{
+margin: 0 0 15px 0;
+}
+
+.input-dark {
+  background-color: #252b42;
+  width: 160px;
+height: 44px;
+border-color:#ffffff;
+border-radius: 5px;
+color: #ffffff;
+}
+
+.item-text-white {
+  font-weight: 700;
+margin: 0 0 15px 0;
+font-size: 16px;
+}
+
+.item_email-text {
+font-weight: 600;
+font-size: 14px;
+margin: 15px 0 0 0;
+}
+
+.item-text {
+color: #252B42;
+font-weight: 700;
+margin: 0 0 15px 0;
+font-size: 16px;
+}
+.input {
+  width: 160px;
+height: 44px;
+background-color: #fff;
+border-color:#FF7B47;
+border-radius: 5px;
+color: #FF7B47;
 }
