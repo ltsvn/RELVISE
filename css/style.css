@@ -740,38 +740,62 @@ color: #737373;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 50px 0 130px ;
-  
-  
+  padding: 50px 0 50px ;  
 }
 
 .subscribe_top-icons {
-
+  flex: 0 1 10%;
+  margin: 10px;
 }
 
+@media (max-width: 720px) {
+  .subscribe_top-icons {
+    flex: 0 1 30%;
+  }
+}
+
+@media (max-width: 620px) {
+  .subscribe_top-icons {
+    flex: 0 1 35%;
+  }
+}
+
+
 .subscribe-bottom {
-  position: absolute;
-  bottom: 0px;
   background-color: #17213C;
   display: flex;
-  padding: 30px 0;
+  padding: 30px 15px;
   margin: 0 0 -62px 0;
-  width: 1050px;
   justify-content: space-around;
-  
+}
+
+@media (max-width: 500px) {
+  .subscribe-bottom {
+    flex-wrap: wrap;
+    
+  }
 }
 
 .subscribe_title {
 color: #ffffff;
-font-size: 24px;
+font-size: 133%;
 font-weight: 700;
 line-height: calc(32/24*100%);
+letter-spacing: 0.1px;
 }
 
 .subscribe-form {
-  display: block;
+  display: flex;
   border-radius: 5px;
-  
+  flex-wrap: wrap;
+  margin: 0 0 0 15px;
+}
+
+@media (max-width: 425px) {
+  .subscribe-form {
+    margin: 0 0 0 -15px;
+    flex-wrap: wrap;
+  }
 }
 
 .subscribe-text {
@@ -780,9 +804,17 @@ height: 58px;
 border-radius: 5px;
 padding-left: 15px;
 color: #737373;
-
-
+margin: 0 0 15px 0;
 }
+
+@media (max-width: 500px){ 
+  .subscribe-text {
+    width: 100px;
+    height: 40px;
+    
+  }
+}
+
 
 .subscribe-button {
   background-color: #FF7B47;
@@ -792,5 +824,16 @@ border-radius: 5px;
 cursor: pointer;
 }
 
+@media (max-width: 500px) {
+  .subscribe-button {
+    width: 85px;
+    height: 40px;
+  }
+}
 
+@media (max-width: 460px) {
+  .subscribe-button {
+   margin-left: 10px;
+  }
+}
 
