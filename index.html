@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="index.html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
@@ -19,16 +19,16 @@
           <nav class="header_menu menu">
             <ul class="menu_list">
               <li class="menu_item">
-                <a href="" class="menu_link">Home</a>
+                <a href="#main-block_title" class="menu_link">Home</a>
               </li>
               <li class="menu_item">
-                <a href="" class="menu_link">Product</a>
+                <a href="#services_body" class="menu_link">Product</a>
               </li>
               <li class="menu_item">
-                <a href="" class="menu_link">Pricing</a>
+                <a href="#header-block_title" class="menu_link">Pricing</a>
               </li>
               <li class="menu_item">
-                <a href="" class="menu_link">Contact</a>
+                <a href="#contact" class="menu_link">Contact</a>
               </li>
             </ul>
           </nav>
@@ -38,7 +38,7 @@
         <div class="page_main-block main-block">
           <div class="main-block_container _container">
             <div class="main-block_body">
-              <h1 class="main-block_title">Finance and Consultancy Solution</h1>
+              <h1 id="main-block_title">Finance and Consultancy Solution</h1>
               <div class="main-block_text">
                 We know how large objects will act, but things on a small scale.
               </div>
@@ -46,7 +46,7 @@
                 <a href="" class="main-block_button main-block_button_orange"
                   >Get Quote Now
                 </a>
-                <a href="" class="main-block_button main-block_button_border"
+                <a href="https://en.wikipedia.org/wiki/Love" target="_blank" class="main-block_button main-block_button_border"
                   >Learn More
                 </a>
               </div>
@@ -58,7 +58,7 @@
         </div>
         <section class="page_services services">
           <div class="services_container _container">
-            <div class="services_body">
+            <div id="services_body">
               <div class="services_column">
                 <div class="services_item item-service">
                    <div class="item-service_icon">
@@ -140,10 +140,10 @@
             </div>
           </div>
         </section>
-        <section class="page_practice practice">
+        <section id="page_practice practice">
           <div class="practice_container _container">
             <div class="practice_header header-block">
-              <h2 class="header-block_title">Practice Advice</h2>
+              <h2 id="header-block_title">Practice Advice</h2>
               <div class="header-block_sub-title">Problems trying to resolve the conflict between <br> 
                 the two major realms of Classical physics: Newtonian mechanics 
               </div>
@@ -235,7 +235,9 @@
             <div class="describe_body">
               <div class="describe_video">
                 <a href="" class="describe_image">
-                  <img src="img/describe/col-md-8.jpg" alt="Explain">
+                  <iframe width="600" height="400"
+                    src="https://www.youtube.com/embed/iONDebHX9qk">
+                  </iframe>
                 </a>
               </div>
               <div class="describe_content">
@@ -313,8 +315,8 @@
                   Newsletter
                 </h2>
                   <div class="subscribe-form">
-                    <input type="text" class="subscribe-text"  value="Your Email">
-                    <input type="button" class="subscribe-button"  value="Subscribe">
+                    <input type="email" onchange="emailValidationl()" id="subscribe-text" placeholder="Your Email" value="" ><br>
+                    <input type="button" onclick="emailSubmitButton()" class="subscribe-button"  value="Subscribe">
                   </div>
               </form>
             </div>
@@ -381,7 +383,7 @@
                <div class="header_title-text">Consulting Agency For Your Business</div>
                <div class="header_sub-title">the quick fox jumps over the lazy dog</div>
              </div>
-             <input type="button" class="contact"  value="Contact Us">
+             <input type="button" id="contact"  value="Contact Us">
            </div>
          </div>
          <div class="contact_body">
