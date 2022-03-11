@@ -21,3 +21,20 @@ function emailSubmitButton(){
     // let x1 = document.getElementById('subscribe-text').value;
     //     alert(x1);
     //     document.getElementById('subscribe-text').value = "";
+
+    // document.querySelector('.main-block_button_orange').addEventListener('click', function(){
+    //     document.querySelector('.popup').classList.add('active');
+    // });
+
+    // document.querySelector('.popup .close-btn').addEventListener('click', function(){
+    //     document.querySelector('.popup').classList.remove('active');
+    // });
+
+    let popUp = document.querySelector('.popup');
+    let popupForm = document.querySelector('.form');
+    let openPopupButton = document.querySelector('.main-block_button_orange');
+
+    openPopupButton.addEventListener('click', function() {
+        function.preventDefault();
+        popUp.classList.add('active');
+    })
