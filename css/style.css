@@ -339,9 +339,9 @@ a.main-block_button_orange:active {
 
 .popup {
   position: absolute;
-  top: -150%;
+  top: 50%;
   left: 50%;
-  opacity: 0;
+display: none;
   transform: translate(-50%, -50%) scale(1.25);
   width: 380px;
   padding: 20px 30px;
@@ -353,23 +353,47 @@ a.main-block_button_orange:active {
               transform 200ms ease-in-out 0ms;
 }
 
-.popup.active {
+.active {
   top: 50%;
-  opacity: 1;
+  display: block !important;
   transform: translate(-50%, -50%) scale(1);
 }
 
-.popup .close-btn {
+.close {
   position: absolute;
   top: 10px;
   right: 10px;
   width: 15px;
+  opacity: 0.3;  
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  height: 25px;
+  width: 2px;
+  content: '';
   background: #888;
-  color: #eee;
   text-align: center;
   line-height: 15px;
   border-radius: 15px;
   cursor: pointer;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+.form.active{
+
 }
 
 .popup .form h2 {
