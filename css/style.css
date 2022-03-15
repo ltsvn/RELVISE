@@ -351,6 +351,7 @@ display: none;
   transition: top 0ms ease-in-out 0ms,
               opacity 200ms ease-in-out 0ms,
               transform 200ms ease-in-out 0ms;
+ 
 }
 
 .active {
@@ -392,8 +393,8 @@ display: none;
 }
 
 
-.form.active{
-
+.form{
+  
 }
 
 .popup .form h2 {
@@ -401,6 +402,10 @@ display: none;
   color: #222;
   margin: 10px 0 20px;
   font-size: 25px;
+}
+
+.popup {
+  
 }
 
 .popup .form .form-element {
