@@ -338,42 +338,35 @@ a.main-block_button_orange:active {
   
 }
 
-.background:after {
-  background: #000;
-  height: 100%;
-  opacity: 0.9;
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  top: 0;
-  left: 0;
-}
-
-
 .popup {
   position: fixed;
-  top: 50%;
-  left: 50%;
-display: none;
-  transform: translate(-50%, -50%) scale(1.25);
-  width: 380px;
-  padding: 20px 30px;
-  background: #fff;
-  box-shadow: 2px 2px 5px 5px;
-  border-radius: 10px;
-  transition: top 0ms ease-in-out 0ms,
-              opacity 200ms ease-in-out 0ms,
-              transform 200ms ease-in-out 0ms;
-  
-
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+ 
 }
 
+.popup.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+  
+}
 
-
-.active {
+.form {
+  position: absolute;
   top: 50%;
-  display: block !important;
-  transform: translate(-50%, -50%) scale(1);
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.25);
+  background: #F3F3F3;
+  width: 400px;
+  padding: 25px;
+  
 }
 
 .close {
@@ -406,12 +399,7 @@ display: none;
 
 .close:after {
   transform: rotate(-45deg);
-}
-
-
-.form{
-  
-}
+} 
 
 .popup .form h2 {
   text-align: center;
@@ -447,18 +435,8 @@ display: none;
   outline: none;
   border: 1px solid #aaa;
   border-radius: 5px;
-}
-
-/* .popup .form .form-element input [type="text"],
-.popup .form .form-element input [type="password"] {
-  margin-top: 5px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  outline: none;
-  border: 1px solid #aaa;
-  border-radius: 5px;
 } */
+
 
 .popup .form .form-element input [type="checkbox"] {
   margin-right: 5px;
@@ -482,8 +460,25 @@ display: none;
   font-size: 15px;
   color: #1a791a;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 600; 
 }
+
+
+ /* .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 380px;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px;
+  border-radius: 10px;
+  transition: top 0ms ease-in-out 0ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 200ms ease-in-out 0ms;
+} */
 
 .main-block_button_border {
   border: 1px solid #0d5c63;
@@ -533,7 +528,7 @@ a.main-block_button_border:hover {
   flex-wrap: wrap;
   
 }
-}
+
 
 .services_column {
   flex: 0 1 33.333%;
