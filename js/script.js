@@ -1,9 +1,10 @@
 const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-
 function emailValidation() {
     if (document.getElementById('subscribe-text').value.match(validRegex)) {
         const sbButton = document.getElementById('subscribe-text').value;
+        alert(sbButton);
+        
         
     } else {
         const button = document.querySelector('subscribe-button');
@@ -42,4 +43,13 @@ function emailSubmitButton(){
     openPopupButton.addEventListener('click', function(e) {
         e.preventDefault();
         popUp.classList.add('active');
-    })
+    });
+
+
+    function popupEmailValidation() {
+        if(document.getElementById('email').value.match(validRegex)) {
+            const 
+        }
+    }
+
+   
