@@ -975,6 +975,11 @@ margin: 0 0 15px 0;
   border-color: green;
 }
 
+form:invalid button  {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 @media (max-width: 500px){ 
   #subscribe-text {
     width: 100px;
