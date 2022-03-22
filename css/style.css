@@ -975,7 +975,7 @@ margin: 0 0 15px 0;
   border-color: green;
 }
 
-form:invalid button  {
+form:invalid button   {
   opacity: 0.3;
   pointer-events: none;
 }
@@ -995,6 +995,7 @@ width: 117px;
 height: 58px;
 border-radius: 5px;
 cursor: pointer;
+color: #F3F3F3;
 }
 
 @media (max-width: 500px) {
