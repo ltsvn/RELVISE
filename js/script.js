@@ -34,11 +34,8 @@ function emailSubmitButton(){
         popUp.classList.add('active');
     });
 
+    я сьогодні проєбалася і не зробила але обіцяю що виправлюся на вихіднихб цьом
 
-    function popupEmailValidation() {
-        if(document.getElementById('email').value.match(validRegex)) {
-            const 
-        }
-    }
+
 
    
