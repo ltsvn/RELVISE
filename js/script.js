@@ -33,9 +33,20 @@ function emailSubmitButton(){
         e.preventDefault();
         popUp.classList.add('active');
     });
-
-    я сьогодні проєбалася і не зробила але обіцяю що виправлюся на вихіднихб цьом
-
+    
+    
+    btn.addEventListener('click',function validateForm() {
+        var isValid = true;
+        var htmlFormFieldTitle = document.forms["email"].value;
+   
+        if (htmlFormFieldTitle == "" && htmlFormFieldAuthor =="" && htmlFormFieldFirst_name =="" && htmlFormFieldLast_name =="") {
+              alert('some fields are mandatory')
+               isValid= false;
+                       }
+         if (isValid = True){
+           popUp();
+           }
+        });
 
 
    
